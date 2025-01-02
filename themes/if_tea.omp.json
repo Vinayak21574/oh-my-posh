@@ -26,8 +26,8 @@
             "wsl": "\ue712"
           },
           "style": "diamond",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
-          "trailing_diamond": "<transparent,>\ue0b2</>",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "trailing_diamond": "<transparent,></>",
           "type": "os"
         },
         {
@@ -35,9 +35,7 @@
           "foreground": "#000000",
           "style": "diamond",
           "leading_diamond": "<transparent,#00c7fc>\ue0b0</>",
-          "properties": {
-            "template": " \ue266 CPU: {{ round .PhysicalPercentUsed .Precision }}% | "
-          },
+          "template": " \ue266 CPU: {{ round .PhysicalPercentUsed .Precision }}% | ",
           "type": "sysinfo"
         },
         {
@@ -137,7 +135,7 @@
             "template": " \ue5ff {{ .Path }} "
           },
           "style": "diamond",
-          "trailing_diamond": "",
+          "trailing_diamond": " ",
           "type": "path"
         }
       ],
